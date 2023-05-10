@@ -1,0 +1,52 @@
+{
+  "name": "airint-software",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nx run-many --target=dev --parallel 4",
+    "build": "nx run-many --target=build --parallel 4",
+    "dev:reporting": "nx run web-reporting:dev",
+    "dev:admin": "nx run web-admin:dev",
+    "dev:portal": "nx run web-portal:dev",
+    "storybook": "nx run ui:dev",
+    "e2e": "nx run-many --target=e2e",
+    "graph": "nx graph"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nrwl/nx-cloud": "^15.0.2",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@tsconfig/react-native": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-define-config": "^1.20.0",
+    "eslint-import-resolver-babel-module": "^5.3.2",
+    "eslint-plugin-file-progress": "^1.3.0",
+    "eslint-plugin-ft-flow": "^2.0.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "nx": "15.4.5",
+    "prettier": "^2.8.2",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0",
+    "typescript": "^4.9.3"
+  },
+  "prettier": "./tools/prettier.config.js",
+  "eslintConfig": {
+    "extends": [
+      "./tools/.eslintrc.base.js"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "ui",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "storybook dev -p 6006 --ci",
+    "build": "storybook build",
+    "theme": "chakra-cli tokens --strict-token-types --strict-component-types src/theme.cts",
+    "postinstall": "pnpm theme"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.4",
+    "@mui/system": "^5.11.5",
+    "@vanilla-extract/css": "^1.9.2",
+    "@vanilla-extract/sprinkles": "^1.5.1",
+    "framer-motion": "^8.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@chakra-ui/cli": "^2.3.0",
+    "@chakra-ui/styled-system": "^2.5.1",
+    "@storybook/addon-essentials": "^7.0.0-beta.21",
+    "@storybook/addon-interactions": "^7.0.0-beta.21",
+    "@storybook/addon-links": "^7.0.0-beta.21",
+    "@storybook/blocks": "^7.0.0-beta.21",
+    "@storybook/react": "^7.0.0-beta.21",
+    "@storybook/react-vite": "^7.0.0-beta.21",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vanilla-extract/vite-plugin": "^3.7.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "pastable": "^2.0.13",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.0-beta.21",
+    "ts-toolbelt": "^9.6.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}

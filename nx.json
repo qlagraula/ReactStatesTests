@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "e2e",
+          "e2e:report",
+          "build-storybook"
+        ],
+        "accessToken": "YTcxODE5YWYtZGU3Ny00ODVhLWJkZWItZGQ3OWY5OWM5ZmY4fHJlYWQtd3JpdGU="
+      }
+    }
+  }
+}
